@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Ratings</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="review-container">
+        <h1>Patient Reviews</h1>
+
+        <div class="reviews-list">
+            <div id="reviews"></div>
+        </div>
+
+        <form id="reviewForm" class="review-form">
+            <label for="patientName">Name:</label>
+            <input type="text" id="patientName" name="patientName" placeholder="Your name..." required>
+
+            <label for="rating">Rating (out of 5):</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>

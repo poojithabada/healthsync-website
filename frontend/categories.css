@@ -1,0 +1,342 @@
+/* General styles for all category pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+.navigation {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Align back button and logo together */
+.nav-left {
+    margin-right: 20px; /* Space on the right of the back button */
+}
+
+/* Back Button */
+.back-button-nav {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-button-nav:hover {
+    background-color: #003d80;
+}
+
+/* Center the logo and menu */
+.nav-center {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Center this flex container */
+}
+
+/* Logo styles */
+.logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Add margin to the logo to create space */
+.logo {
+    margin-right: 15px; /* Adjust this value for desired spacing */
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+/* Menu styles */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between menu items */
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ffd700;
+}
+
+/* Appointment button */
+.nav-appointment-btn {
+    background-color: #ffd700;
+    color: #007BFF;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+/* Add gap between the menu and the Login button */
+.nav-appointment-btn {
+    margin-left: 20px; /* Adjust this value to set the gap */
+}
+
+/* Category header styles */
+.category-header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.category-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.category-header p {
+    font-size: 1.2rem;
+}
+
+/* Category content styles */
+.category-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.category-content article {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.category-content article:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-content h2 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.category-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+/* Style for the search bar and button */
+.search-bar {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    margin-left:300px;
+}
+.search-input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    margin-right: 500px;
+
+}
+
+
+
+.search-button i {
+    font-size: 16px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(233, 233, 233); 
+  }
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*profile*/
+.profile-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #014dd5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left:10px;
+}
+
+.profile-info {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon-container:hover .profile-info {
+    display: block;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.profile-email {
+    color: #666;
+    font-size: 0.9em;
+}
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(56, 56, 56); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1b1b1b; 
+  }
+#hero{
+    min-height: 600px;
+    background-color: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+.logo{
+    color:#122853;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+.logo span{
+    background-color: #014dd5;
+    color: #ffffff;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 40px;
+}
+.menu li a{
+    margin: 0px 20px;
+    color: #303030;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+.menu li a:hover{
+    color: #014dd5;
+}
+.nav-appointment-btn{
+    height: 45px;
+    padding: 0px 20px;
+    border-radius:4px;
+    background-color: #014dd5;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}

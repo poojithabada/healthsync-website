@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="patientlogin.css">
+    <title>Patient Login</title>
+</head>
+
+<body>
+    <div class="back-button-container">
+        <!-- You can add a back button here if needed -->
+    </div>
+
+    <div class="login-container">
+        <h2>Patient Login</h2>
+        <form class="form-container">
+            <input type="text" name="username" placeholder="Username" class="form-input" required>
+            <input type="password" name="password" placeholder="Password" class="form-input" required>
+            <!-- Updated button to redirect without submitting the form -->
+            <button type="button" class="login-button" onclick="window.location.href='afterloginpage.php'">Login</button>
+        </form>
+        <div class="forgotpassword">
+            <p><a href="forgotpassword.html">Forgot Password?</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

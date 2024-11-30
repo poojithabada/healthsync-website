@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Tools</title>
+    <link rel="stylesheet" href="healthtools.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Support Tools</h1>
+
+        <section class="tool-section">
+            <h2>Mindfulness Exercise</h2>
+            <p>Take a moment to breathe deeply. Use this breathing guide to calm your mind.</p>
+            <button id="startMindfulness">Start Breathing Exercise</button>
+            <div id="mindfulnessTimer"></div>
+        </section>
+
+        <section class="tool-section">
+            <h2>Stress Management Tips</h2>
+            <ul id="stressTips"></ul>
+            <button id="loadStressTips">Get Stress Management Tips</button>
+        </section>
+
+        <section class="tool-section">
+            <h2>Consult a Mental Health Professional</h2>
+            <form id="consultationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="issue">Describe Your Issue:</label>
+                <textarea id="issue" name="issue" rows="4" required></textarea>
+
+                <button type="submit">Request Consultation</button>
+            </form>
+            <div id="responseMessage"></div>
+        </section>
+    </div>
+
+    <script src="healthtools.js"></script>
+</body>
+</html>

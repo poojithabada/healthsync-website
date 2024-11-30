@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="verification.css">
+    <title>Doctor Verification</title>
+</head>
+<body>
+    <div class="back-button-container">
+    <a href="doctorsignup.html" class="back-button">Back</a>
+    </div>
+    <div class="verification-container">
+        <h1>Doctor Verification</h1>
+        <form action="afterloginpage.html" method="GET">
+        <form id="verification-form" action="confirmation.html" method="get" enctype="multipart/form-data">
+            <label for="doctor-id">Upload Doctor ID:</label>
+            <input type="file" id="doctor-id" name="doctor-id" accept="image/*" required>
+
+            <label for="medical-license">Medical License No:</label>
+            <input type="text" id="medical-license" name="medical-license" required>
+
+            <label for="experience">Experience in Hospital:</label>
+            <input type="text" id="experience" name="experience" placeholder="e.g., City Hospital" required>
+
+            <label for="years-experience">Number of Years of Experience:</label>
+            <input type="number" id="years-experience" name="years-experience" placeholder="e.g., 5" required>
+
+            <label for="experience-proof">Upload Proof of Experience:</label>
+            <input type="file" id="experience-proof" name="experience-proof" accept="application/pdf,image/*" required>
+
+            <button type="submit" class="submit-button">Verify</button>
+        </form>
+        <div class="verification-info">
+            <p>Please submit your details for verification. You will be contacted with the results.</p>
+        </div>
+    </div>
+</body>
+</html>

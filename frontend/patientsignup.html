@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Sign-up</title>
+    <link rel="stylesheet" href="patientsignup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Patient Sign-up</h2>
+        <form action="../backend/patient_signup.php" method="POST">
+            <input type="text" name="name" placeholder="Full Name" class="form-input" required>
+            <input type="email" name="email" placeholder="Email" class="form-input" required>
+            <input type="text" name="username" placeholder="Username" class="form-input" required>
+            <input type="password" name="password" placeholder="Password" class="form-input" required>
+            <input type="number" name="age" placeholder="Age" class="form-input" required>
+            <select name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="text" name="contact_info" placeholder="Contact Info" class="form-input" required>
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="patientlogin.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>

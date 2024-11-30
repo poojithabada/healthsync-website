@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Wellness Programs</title>
+    <link rel="stylesheet" href="wellnessprograms.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Wellness Program</h1>
+        <form id="wellnessForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="healthGoal">Primary Health Goal:</label>
+            <select id="healthGoal" name="healthGoal" required>
+                <option value="fitness">Improve Fitness</option>
+                <option value="weight_loss">Weight Loss</option>
+                <option value="diet">Diet & Nutrition</option>
+                <option value="mental">Mental Wellness</option>
+                <option value="chronic_management">Chronic Condition Management</option>
+            </select>
+
+            <label for="history">Health History (select all that apply):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="history" value="diabetes"> Diabetes</label>
+                <label><input type="checkbox" name="history" value="hypertension"> Hypertension</label>
+                <label><input type="checkbox" name="history" value="heart_disease"> Heart Disease</label>
+                <label><input type="checkbox" name="history" value="anxiety"> Anxiety</label>
+                <label><input type="checkbox" name="history" value="depression"> Depression</label>
+                <label><input type="checkbox" name="history" value="none"> No significant conditions</label>
+            </div>
+
+            <label for="activityLevel">Current Activity Level:</label>
+            <select id="activityLevel" name="activityLevel" required>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+            </select>
+
+            <button type="submit">Get Wellness Plan</button>
+        </form>
+
+        <div id="wellnessPlan"></div>
+    </div>
+
+    <script src="wellnessprogram.js"></script>
+</body>
+</html>

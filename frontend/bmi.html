@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Risk Assessment Tool</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Risk Assessment Tool</h1>
+        <form id="healthForm">
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="input-group">
+                <label for="smoking">Do you smoke?</label>
+                <select id="smoking">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="exercise">Do you exercise regularly?</label>
+                <select id="exercise">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button type="button" onclick="assessHealth()">Get Health Recommendation</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Your Health Assessment:</h2>
+            <p id="recommendation"></p>
+        </div>
+    </div>
+
+    <script src="bmi.js"></script>
+</body>
+</html>

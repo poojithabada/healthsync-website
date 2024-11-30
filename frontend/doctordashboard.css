@@ -1,0 +1,173 @@
+/* General CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e9eff7;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Profile Header Styling */
+.profile-header {
+    display: flex;
+    align-items: center;
+    background-color: #2d72d9;
+    color: #ffffff;
+    padding: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+}
+
+.doctor-details h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.doctor-details p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 100%;
+    background-color: #324a5f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #3a5b79;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sidebar ul li:hover {
+    background-color: #4d6e90;
+}
+
+/* Active Sidebar Link */
+.sidebar ul li a.active {
+    background-color: #4d6e90;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f9fc;
+}
+
+main h2 {
+    color: #2d72d9;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Styling for Patient and Appointment Data */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #d9dee5;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+th {
+    background-color: #324a5f;
+    color: #ffffff;
+}
+
+/* Medical Reports List Styling */
+#reports ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reports li {
+    padding: 8px;
+    font-size: 0.95em;
+    color: #333;
+}
+
+#reports li + li {
+    border-top: 1px solid #d9dee5;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Sign-up</title>
+    <link rel="stylesheet" href="doctorsignup.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <div class="back-button-container">
+        <!-- Optional back button if you need one -->
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+
+    <div class="container">
+        <h2>Doctor Sign-up</h2>
+        <form action="../backend/doctor_signup.php" method="POST"> <!-- Form action points to PHP script -->
+            <input type="text" name="fullname" placeholder="Full Name" required>
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <input type="text" name="username" placeholder="Username" required>
+
+            <input type="password" name="password" placeholder="Password" required>
+
+            <select name="specialization" required>
+                <option value="" disabled selected>Specialization</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="dermatology">Dermatology</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="oncology">Oncology</option>
+                <option value="Gynacecologist">Gynacecologist</option>
+                <option value="ENT">ENT</option>
+                <option value="general surgeon">General Surgeon</option>
+                <option value="endocrinology">Endocrinology</option>
+            </select>
+
+            <!-- Optional fields -->
+            <input type="text" name="contact_info" placeholder="Contact Info">
+
+            <textarea name="availability_schedule" placeholder="Availability Schedule"></textarea>
+
+            <input type="number" name="consultation_fees" placeholder="Consultation Fees" step="0.01">
+
+            <input type="number" name="ratings" placeholder="Ratings (1-5)" step="0.01" min="1" max="5">
+
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="doctorlogin.html">Login here</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

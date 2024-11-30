@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <title>Book Your Appointment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <section id="hero">
+
+        <nav class="navigation">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <a href="afterloginpage.html" class="logo">
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>Health</span>Sync</a>
+                <input type="text" class="search-input" placeholder="Search">
+                <a href="chat.html" class="nav-appointment-btn">Chat</a>
+            <!--*contact-->
+        </div>
+    </nav>
+
+    <nav class="secondary-nav">
+        <ul class="menu">
+            <li><a href="afterloginpage.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="patientdashboard.html">Dash Board</a></li>
+
+            
+        </ul>
+        </nav>
+    
+    <main>
+        <header class="appointment-header">
+            <h1>Book an Appointment</h1>
+            <p>Please fill in the form below to schedule your appointment.</p>
+        </header>
+
+        <section class="appointment-form-section">
+            <form action="appointmentstatus.html" method="GET" class="appointment-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="department">Select Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">--Select a Department--</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="dermatology">Dermatology</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="oncology">Oncology</option>
+                    <option value="general_surgery">General Surgery</option>
+                    <option value="endocrinology">Endocrinology</option>
+                </select>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">--Select a Doctor--</option>
+                    <option value="dr_gangaraju">Dr. Ganga Raju (Cardiology)</option>
+                    <option value="dr_devaraju">Dr. Deva Raju (Cardiology)</option>
+                    <option value="dr_krishnamraju">Dr. Krishnam Raju (Dermatology)</option>
+                    <option value="dr_raviraju">Dr. Ravi Raju (Dermatology)</option>
+                    <option value="dr_yadamraju">Dr. Yadam Raju (Neurology)</option> 
+                    <option value="dr_nagaraju">Dr. Naga Raju (Neurology)</option>
+                    <option value="dr_gokaraju">Dr. Goka Raju (Orthopedics)</option>
+                    <option value="dr_muniraju">Dr. Muni Raju (Orthopedics)</option>
+                    <option value="dr_ramaraju">Dr. Rama Raju (Pediatrics)</option>
+                    <option value="dr_veeraraju">Dr. Veera Raju (Pediatrics)</option>
+                    <option value="dr_yuvaraju">Dr. Yuva Raju (Oncology)</option>
+                    <option value="dr_rudraraju">Dr. Rudra Raju (General Surgery)</option>
+                    <option value="dr_kapiraju">Dr. Kapi Raju (Endocrinology)</option>
+                </select>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-company-box">
+                <p>&copy; 2024 HealthSync. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

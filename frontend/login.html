@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="back-button-container"></div>
+    <div class="container">
+        <!-- Doctor Login -->
+        <div class="login-container doctor-container">
+            <img src="images/doctor.png" alt="Doctor" class="profile-image"> 
+            <a href="doctorsignup.html" class="login-button">Doctor Sign Up</a>
+        </div>
+
+        <!-- Patient Login -->
+        <div class="login-container patient-container">
+            <img src="images/patient.png" alt="Patient" class="profile-image">
+            <a href="patientsignup.html" class="login-button">Patient Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Hidden Admin Login Link -->
+    <a href="admin_login.html" id="admin-link" style="display: none; color: red; font-size: 20px;">Admin Login</a>
+
+    <script>
+        // Listen for the keydown event to trigger the admin link visibility
+        document.addEventListener('keydown', function (e) {
+            // Check for Ctrl + L key combination (you can change this to any other combination)
+            if (e.ctrlKey && e.key === 'l') {
+                const adminLink = document.getElementById('admin-link');
+                adminLink.style.display = 'block'; // Show the admin link
+                alert("Admin login link activated!"); // Optional alert
+                e.preventDefault(); // Prevent default browser behavior (for Ctrl + L)
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="doctors.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body>
+    <section id="hero">
+
+        <nav class="navigation">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <a href="afterloginpage.html" class="logo">
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>Health</span>Sync</a>
+                <input type="text" id="searchInput" placeholder="Search for doctors by name " >
+                
+                <a href="chat.html" class="chatbutton" >Chat</a>
+        <div class="profile-icon-container">
+            <div class="profile-icon">SB</div>
+            <div class="profile-info">
+                <p class="profile-name">Sharon Blessy</p>
+                <p class="profile-email">sharonblessy77@gmail.com</p>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="secondary-nav">
+        <ul class="menu">
+            <li><a href="afterloginpage.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="patientdashboard.html">Dash Board</a></li>
+
+            
+        </ul>
+        </nav>
+  <div class="pre">
+    <div class="loader"></div>
+  </div>
+  </header>
+
+  <header class="h">
+    <header>
+        <h1>Find a Doctor</h1>
+    </header>
+    <div class="filter-sort">
+      <label for="experience-filter" style="color: black; font-family: 'Poppins', sans-serif; font-size: 20px;padding:5px;">Experience:</label>
+      <select id="experience-filter" class="btn2" style="height: 35px; width: 130px; border: 2px; border-radius: 5px; padding: 5px;">
+        <option value="" style="font-family: 'Poppins', sans-serif;border-width:5px; border-color:black;">All</option>
+        <option value="5">5+ years</option>
+        <option value="10">10+ years</option>
+        <option value="15">15+ years</option>
+      </select>
+      
+      <label for="fee-filter" style="color: black; font-family: 'Poppins', sans-serif; font-size: 20px;padding:5px;" class="min">Minimum Fee:</label>
+      <input type="range" id="fee-filter" min="0" max="1000" step="50" value="500" style="height: 35px; ">
+      <span id="fee-value" style="color: black; font-family: 'Poppins', sans-serif; font-size: 20px; margin-right: 20px;padding:5px;">1000</span>
+      
+      <button id="sort-btn" class="sort-btn" style="font-family: 'Poppins', sans-serif; width: 130px; height: 35px;padding: 5px; margin-left: 10px; margin-right: 10px; background-color:#014dd5 ; ">Sort by Fee</button>
+    </div>
+  </header>
+
+  <main>
+    <ul id="doctor-list"></ul>
+  </main>              
+        </div>
+      </div>
+    </div>
+      
+  </footer>
+  <div id="back-to-top-container">
+    <div class="circle">
+      <svg id="back-to-top" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+      </svg>
+    </div>
+  </div>
+  <div id="progressBar"></div>
+  <script src="doctors.js">   
+  </script>
+</body>
+</html>

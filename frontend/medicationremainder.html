@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Reminders</title>
+    <link rel="stylesheet" href="medicationremainder.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="medication-reminders">
+                <h3>Medication Reminders</h3>
+                <table id="medication-table">
+                    <tr>
+                        <th>Medication</th>
+                        <th>Dosage</th>
+                        <th>Frequency</th>
+                        <th>Next Dose</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="add-medication">
+                <h3>Add Medication</h3>
+                <form id="medication-form">
+                    <label for="email">User Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="medication-name">Medication Name:</label>
+                    <input type="text" id="medication-name" name="medication-name" required>
+                    
+                    <label for="dosage">Dosage:</label>
+                    <input type="text" id="dosage" name="dosage" required>
+                    
+                    <label for="frequency">Frequency:</label>
+                    <select id="frequency" name="frequency" required>
+                        <option>Once Daily</option>
+                        <option>Twice Daily</option>
+                        <option>Thrice Daily</option>
+                    </select>
+                    
+                    <label for="next-dose">Next Dose (Time):</label>
+                    <input type="time" id="next-dose" name="next-dose" required>
+                    
+                    <button type="submit">Add Medication</button>
+                    <div class="message" id="message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="medicationremainder.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+}
+
+/* Confirmation container styling */
+.confirmation-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Confirmation message styling */
+.confirmation-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 1rem;
+}
+
+.back-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
